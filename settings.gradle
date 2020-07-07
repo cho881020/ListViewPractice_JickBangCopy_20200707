@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ListViewPractice_JickBangCopy_20200707"
