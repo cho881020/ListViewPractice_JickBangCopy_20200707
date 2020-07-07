@@ -6,6 +6,21 @@ class Room(
     val floor:Int,
     val description:String) {
 
+    fun getFormattedFloor() : String {
+//        지상층 (1이상) / 반지하 (0층) / 지하층 ( -1 ~ 그 이하)
+        if (this.floor >= 1) {
+            return "${this.floor}층"
+        }
+        else if (this.floor == 0) {
+            return "반지하"
+        }
+        else {
+//            들어있는 값이 -1 등의 음수.
+//            다시 -1을 곱해서 양수가 나오도록 부호 변경
+            return "지하 ${-this.floor}층"
+        }
+    }
+
     fun getFormattedPrice() : String {
 //        1억이 넘냐 아니냐에 따라 다르게 가공.
         if (this.price >= 10000) {
