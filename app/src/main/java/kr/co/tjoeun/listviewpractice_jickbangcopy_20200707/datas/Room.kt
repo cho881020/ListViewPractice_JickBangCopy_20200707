@@ -1,10 +1,12 @@
 package kr.co.tjoeun.listviewpractice_jickbangcopy_20200707.datas
 
+import java.io.Serializable
+
 class Room(
     val price:Int,
     val address:String,
     val floor:Int,
-    val description:String) {
+    val description:String) : Serializable {
 
     fun getFormattedFloor() : String {
 //        지상층 (1이상) / 반지하 (0층) / 지하층 ( -1 ~ 그 이하)

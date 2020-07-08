@@ -28,6 +28,10 @@ class MainActivity : BaseActivity() {
 //            눌린 방의 정보를 상세화면에 전달.
 
             val myIntent = Intent(mContext, ViewRoomDetailActivity::class.java)
+
+//            putExtra로 방 정보 첨부 => 방 데이터를 한꺼번에 첨부
+            myIntent.putExtra("room", clickedRoom)
+
             startActivity(myIntent)
 
         }
