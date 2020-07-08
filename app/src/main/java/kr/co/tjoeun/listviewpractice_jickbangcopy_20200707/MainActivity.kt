@@ -21,6 +21,13 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        roomListView.setOnItemClickListener { parent, view, position, id ->
+            val clickedRoom = mRoomList[position]
+
+//            눌린 방의 정보를 상세화면에 전달.
+
+        }
+
     }
 
     override fun setValues() {

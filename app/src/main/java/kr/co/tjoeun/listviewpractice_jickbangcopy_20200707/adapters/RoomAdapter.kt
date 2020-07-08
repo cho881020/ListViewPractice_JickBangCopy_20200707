@@ -9,7 +9,10 @@ import android.widget.TextView
 import kr.co.tjoeun.listviewpractice_jickbangcopy_20200707.R
 import kr.co.tjoeun.listviewpractice_jickbangcopy_20200707.datas.Room
 
-class RoomAdapter(val mContext:Context, val resId:Int, val mList:List<Room>) : ArrayAdapter<Room>(mContext, resId, mList) {
+class RoomAdapter(
+    val mContext:Context,
+    val resId:Int,
+    val mList:List<Room>) : ArrayAdapter<Room>(mContext, resId, mList) {
 
     val inf = LayoutInflater.from(mContext)
 
