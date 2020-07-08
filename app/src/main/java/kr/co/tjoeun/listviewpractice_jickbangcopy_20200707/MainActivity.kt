@@ -1,5 +1,6 @@
 package kr.co.tjoeun.listviewpractice_jickbangcopy_20200707
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,6 +26,9 @@ class MainActivity : BaseActivity() {
             val clickedRoom = mRoomList[position]
 
 //            눌린 방의 정보를 상세화면에 전달.
+
+            val myIntent = Intent(mContext, ViewRoomDetailActivity::class.java)
+            startActivity(myIntent)
 
         }
 
